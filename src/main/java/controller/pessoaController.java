@@ -1,10 +1,12 @@
-package dev.teusxly.projetoCadastroDePessoas;
+package controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class Controller {
+@RequestMapping
+public class pessoaController {
 
 	@GetMapping("/hello")
 	public String dizerHolar() {
